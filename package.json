@@ -1,0 +1,22 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GIANGPTDTT/json-server.git"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": "Dzang Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GIANGPTDTT/json-server/issues"
+  },
+  "homepage": "https://github.com/GIANGPTDTT/json-server#readme"
+}

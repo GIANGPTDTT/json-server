@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:3000/api
+@resourceName = products
+###
+# @name getAllProduct
+GET {{baseUrl}}/{{resourceName}}
+
+###
+# @name filter
+GET {{baseUrl}}/{{resourceName}}?price_gte=100
+
+###
+# @name paging
+GET {{baseUrl}}/{{resourceName}}?_page=2&_limit=5
+
+###
+# @name addNewProduct
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "categoryId": "dcabe338-9209-47c3-9721-1043ce274421",
+    "name": "Ergonomic Metal Soap1",
+    "color": "grey",
+    "price": 144,
+    "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+    "thumnailUrl": "http://placeimg.com/400/400"
+}
+
+###
+# @name updateProduct
+PATCH  {{baseUrl}}/{{resourceName}}/b27c9ead-290e-4bb9-a91a-d2d04dd1a53f
+Content-Type: application/json
+
+{
+    "name": "Ergonomic Metal Soap1",
+    "color": "grey",
+    "price": 555
+}
+
+###
+# @name deleteProduct
+DELETE  {{baseUrl}}/{{resourceName}}/5

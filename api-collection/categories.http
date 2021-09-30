@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3000/api
+###
+# @name getAllProduct
+GET {{baseUrl}}/categories
+
+###
+# @name addNewProduct
+POST {{baseUrl}}/categories
+Content-Type: application/json
+{
+     "name": "Laptop"
+}
+
+###
+# @name updateProduct
+PATCH  {{baseUrl}}/categories/2
+Content-Type: application/json
+
+{
+    "name": "New Laptop"
+}
+
+###
+# @name deleteProduct
+DELETE  {{baseUrl}}/categories/5
